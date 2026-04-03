@@ -2,6 +2,9 @@
 
 A semantic search engine built for Karunya University internals. Upload any document, and search through it using natural language queries powered by Google's Gemma Embedding model.
 
+![Home](screenshots/home.png)
+![Search Results](screenshots/search-results.png)
+
 ## Stack
 
 - **Embedding Model**: Google EmbeddingGemma 300M (768-dim, runs locally)
