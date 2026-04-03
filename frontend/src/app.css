@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --black: #050505;
+  --black-1: #0a0a0a;
+  --black-2: #111111;
+  --black-3: #1a1a1a;
+  --black-4: #222222;
+  --neon: #00ffc8;
+  --neon-dim: #00ffc820;
+  --neon-mid: #00ffc850;
+  --neon-glow: 0 0 20px #00ffc830, 0 0 60px #00ffc810;
+  --text: #e0e0e0;
+  --text-muted: #888888;
+  --text-dim: #5a5a5a;
+  --danger: #ff3b3b;
+  --radius: 12px;
+  --font: 'Outfit', sans-serif;
+  --mono: 'JetBrains Mono', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--black);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font);
+  border: none;
+  background: none;
+}
+
+input, select {
+  font-family: var(--font);
+  outline: none;
+}
+
+::selection {
+  background: var(--neon-mid);
+  color: var(--black);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--black-1);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--black-4);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neon-dim);
+}
