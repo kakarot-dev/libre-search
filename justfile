@@ -63,7 +63,7 @@ install:
 status:
     #!/usr/bin/env bash
     echo "SurrealDB:"
-    docker ps --filter name=surrealdb --format "  {{.Status}}" || echo "  not running"
+    docker ps --filter name=surrealdb --format "  {{'{{'}}.Status{{'}}'}}" || echo "  not running"
     echo "Backend (port 8081):"
     fuser 8081/tcp 2>/dev/null && echo "  running" || echo "  not running"
     echo "Frontend (port 5173):"
